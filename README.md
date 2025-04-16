@@ -1,17 +1,12 @@
+# React + Vite
 
-# senai-gpt-web-react
-1. Verificar se tenho a verção de Node v20 instalado.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-     2. node --version
-   
-     3. Apos isso coloque o seguinte codigo
-     
-        ![Captura de tela 2025-04-14 213859](https://github.com/user-attachments/assets/552b8f71-9f5d-4a59-9653-3852195dcdc9)
-        
-     4. Com isso coloque cd e o nome de seu arquivo
-  
-     5.  E coloque os seguintes codigos npm install e logo após npm run dev
-  
-     6.  ![image](https://github.com/user-attachments/assets/341395f4-1832-4539-9818-60adb02e6771)
+Currently, two official plugins are available:
 
-     7.  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
