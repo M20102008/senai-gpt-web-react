@@ -1,6 +1,30 @@
 import "./login.css";
-
+import logo from "../../assets/imgs/Chat.png";
+import { useState } from "react";
 function Login() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onLoginClick = async ()=> {
+
+    let response = await fetch("https://senai-gpt-api.azurewebsites.net/login", {
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST",
+      body: JSON.stringify( {
+        email: email,
+        password:password
+      })
+
+    });
+
+    console.log(response)
+
+  }
+
   return (
     <>
       <header></header>
@@ -11,7 +35,7 @@ function Login() {
         <div className="login-container">
           <img
             className="logo"
-            src="../assets/imgs/Chat.png"
+            src={logo}
             alt="SenaiGPT logo"
           />
 
@@ -19,14 +43,14 @@ function Login() {
             Login
           </h1>
 
-          <input className="inpt" type="email" placeholder="Insira o e-mail" />
+          <input className="inpt" value={email} onChange={event => setEmail(event.target.value)} type="email" placeholder="Insira o e-mail" />
           <input
-            className="inpt"
+            className="inpt" value={password} onChange={event => setPassword(event.target.value)}
             type="password"
             placeholder="Insira a senha"
           />
 
-          <button className="btn">Entrar</button>
+          <button className="btn" onClick={() => onLoginClick()}>Entrar</button>
         </div>
       </main>
 
