@@ -1,23 +1,16 @@
-# Senai Gpt react
 
-verificar se tenho o node.js instalado
-Captura de tela 2025-04-14 211734
-
-Executar o node.js
-image
-
-Toda vez que eu for abrir meu projeto em react eu faço esse comando: 
-
-
-O app.jsx serve para fazer linkagens
-Para importar uma imagem em react use image
-
-E para aparecer a imagem coloque esse codigo: image
-
-7.esse comando serve para salvar algum valor
-
-image
-
-image
-
-o codigo fetch serve para enviar dados para back-end
+ 
+      2. node --version
+ 
+      4. apos isso coloque o seguinte codigo
+      3. Apos isso coloque o seguinte codigo
+ 
+         ![Captura de tela 2025-04-14 213859](https://github.com/user-attachments/assets/552b8f71-9f5d-4a59-9653-3852195dcdc9)
+         
+      4. Com isso coloque cd e o nome de seu arquivo
+   
+      5.  E coloque os seguintes codigos npm install e logo após npm run dev
+   
+      6.  ![image](https://github.com/user-attachments/assets/341395f4-1832-4539-9818-60adb02e6771)
+ 
+      7.  
