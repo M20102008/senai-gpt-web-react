@@ -1,6 +1,8 @@
 import "./login.css";
 import logo from "../../assets/imgs/Chat.png";
 import { useState } from "react";
+
+
 function Login() {
 
   const [email, setEmail] = useState("");
@@ -22,6 +24,36 @@ function Login() {
     });
 
     console.log(response)
+
+    if (response.ok == true) {
+
+      alert("login realizado com sucesso!")
+
+      console.log(response);
+
+      let json = await response.json();
+
+      let token = json.accessToken;
+
+      console.log("Token: " + token);
+
+      localStorage.setItem("meutoken", token);
+
+      window.location.href = "/chat";
+
+    } else {
+
+      if (response.status == 401) {
+
+        alert("Credenciais incorretas. Tente novamente")
+
+      } else{
+
+        alert("Erro inesperado aconteceu, caso percista contate os adiministradores")
+
+      }
+
+    }
 
   }
 

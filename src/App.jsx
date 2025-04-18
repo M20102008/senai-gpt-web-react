@@ -1,4 +1,6 @@
+
 import Login from "./pages/login"
+import Chat from "./pages/chat"
 
 function App() {
 
