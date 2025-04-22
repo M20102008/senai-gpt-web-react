@@ -14,14 +14,14 @@ npm install (baixa o node modules).
 
 npm run dev (entrar no link do site).
 
-4. No mesmo repositorio, execute o cd senai-gpt-web-react.
-5. 
+5. No mesmo repositorio, execute o cd senai-gpt-web-react.
+ 
 6. Execute o code . (abre o vs code).
-7. 
-8. Coloque o seu projeto e no vs code substitua o powershell pro git bash.
-9. 
-10. Abra o terminal e coloque npm install e npm run dev.
-11. 
-12. http cats e http status codes (para erros)
-13. 
-14. para teste.
+
+7. Coloque o seu projeto e no vs code substitua o powershell pro git bash.
+ 
+8. Abra o terminal e coloque npm install e npm run dev.
+ 
+9. http cats e http status codes (para erros)
+ 
+10. para teste.
