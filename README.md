@@ -1,8 +1,8 @@
 #SenaiGPT React
 ## NODE
-1. Verificar se esta com a versao do node v20 instalado.
+1. Verificar se esta com a versao do `node v20` instalado.
 2. 
-3. node --version (no cmd, em qualquer pasta.
+3. `node --version` (no cmd, em qualquer pasta.
  
    ![image](https://github.com/user-attachments/assets/c3244bf6-8e82-46f7-87d1-9bf8c0e0f719)
    3.Execute o comando no cmd do repositorio: npm create vite@latest senai-gpt-web-react -- --template react:
