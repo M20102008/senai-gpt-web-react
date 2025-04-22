@@ -1,5 +1,6 @@
-#SenaiGPT React
-## NODE
+#SENAIGPT REACT
+
+#NODE
 1. Verificar se esta com a versao do `node v20` instalado.
 2. 
 3. `node --version` (no cmd, em qualquer pasta.
