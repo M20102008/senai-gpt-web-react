@@ -1,95 +1,105 @@
 import "./chat.css"
+import btn from "../../assets/imgs/IconSet (1).svg";
+import btnc from "../../assets/imgs/IconSet (1).svg";
+import btnchat from "../../assets/imgs/IconSet (1).svg";
+import logo from "../../assets/imgs/Chat.png";
+import exemplos from "../../assets/imgs/IconSet (3).svg";
+import exempless from "../../assets/imgs/Star.svg";
+import exemples from "../../assets/imgs/ShieldWarning (1).svg";
+import aviao from "../../assets/imgs/Vector (3).png";
+import microfone from "../../assets/imgs/IconSet.png";
+import botaoimagem from "../../assets/imgs/Vector (2).png";
 function Chat() {
-return (
-    <div class="container">
+    return (
+        <div className="container">
 
-        <header class="left-painel">
+            <header className="left-painel">
 
-            <div class="top">
+                <div className="top">
 
-                <button class="btn-new-chat"> + New Chat </button>
-                <button class="btn-chat">
-                    <img src="../assets/imgs/IconSet (1).svg" alt=""/>
-                    AI Chat Tool Ethics </button>
-                <button class="btn-chat">
-                    <img src="../assets/imgs/IconSet (1).svg" alt=""/>
-                    Al Chat Tool Impact Writing </button>
-                <button class="btn-chat">
-                    <img src="../assets/imgs/IconSet (1).svg" alt=""/>
-                    New chat </button>
-
-            </div>
-
-            <div class="bottom">
-
-                <button class="btn"> Clear Conversations </button>
-                <button class="btn"> Light mode </button>
-                <button class="btn"> My Account </button>
-                <button class="btn"> Updates & FAQ </button>
-                <button class="btn"> Log out </button>
-
-            </div>
-
-        </header>
-
-        <main class="painel-central">
-
-           <img class="logo" src="../assets/imgs/Chat.png" alt=""/>
-
-            <div class="dicas-container">
-
-                <div class="dicas-item">
-
-                    <h2>
-                        <img src="../assets/imgs/IconSet (3).svg" alt="Mensagem"/>
-                        Examples
-                    </h2>
-
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
+                    <button className="btn-new-chat"> + New Chat </button>
+                    <button className="btn-chat">
+                        <img src={btn} alt="" />
+                        AI Chat Tool Ethics </button>
+                    <button className="btn-chat">
+                        <img src={btnc} alt="" />
+                        Al Chat Tool Impact Writing </button>
+                    <button className="btn-chat">
+                        <img src={btnchat} alt="" />
+                        New chat </button>
 
                 </div>
 
-                <div class="dicas-item">
+                <div className="bottom">
 
-                    <h2>
-                        <img src="../assets/imgs/Star.svg" alt="estrela"/>
-                        Examples
-                    </h2>
-
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
+                    <button className="btn"> Clear Conversations </button>
+                    <button className="btn"> Light mode </button>
+                    <button className="btn"> My Account </button>
+                    <button className="btn"> Updates & FAQ </button>
+                    <button className="btn"> Log out </button>
 
                 </div>
 
-                <div class="dicas-item">
-                    <h2>
-                        <img src="../assets/imgs/ShieldWarning (1).svg" alt=""/>
-                        Examples
-                    </h2>
+            </header>
 
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
-                    <p>Explique como um computador quantico funciona.</p>
+            <main className="painel-central">
+
+                <img className="logo" src={logo} alt="" />
+
+                <div className="dicas-container">
+
+                    <div className="dicas-item">
+
+                        <h2>
+                            <img src={exemplos} alt="Mensagem" />
+                            Examples
+                        </h2>
+
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+
+                    </div>
+
+                    <div className="dicas-item">
+
+                        <h2>
+                            <img src={exempless} alt="estrela" />
+                            Examples
+                        </h2>
+
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+
+                    </div>
+
+                    <div className="dicas-item">
+                        <h2>
+                            <img src={exemples} alt="" />
+                            Examples
+                        </h2>
+
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+                        <p>Explique como um computador quantico funciona.</p>
+
+                    </div>
 
                 </div>
 
-            </div>
+                <div className="input-text">
+                    <input className="input" type="text" placeholder="Type message" />
 
-            <div class="input-text">
-                <input class="input" type="text" placeholder="Type message"/>
+                    <img className="aviao" src={aviao} alt="Enviar" />
+                    <img className="microfone" src={microfone} alt="Microfone" />
+                    <img className="botaoimagem" src={botaoimagem} alt="Enviar Imagem" />
 
-                <img class="aviao" src="../assets/imgs/Vector (3).png" alt="Enviar"/>
-                <img class="microfone" src="../assets/imgs/IconSet.png" alt="Microfone"/>
-                <img class="botaoimagem" src="../assets/imgs/Vector (2).png" alt="Enviar Imagem"/>
+                </div>
 
-            </div>
+            </main>
 
-        </main>
-
-    </div>
- );
+        </div>
+    );
 }
 export default Chat;
