@@ -32,11 +32,11 @@ function Chat() {
 
                 <div className="bottom">
 
-                    <button className="btn"> Clear Conversations </button>
-                    <button className="btn"> Light mode </button>
-                    <button className="btn"> My Account </button>
-                    <button className="btn"> Updates & FAQ </button>
-                    <button className="btn"> Log out </button>
+                    <button className="btn-bx"> Clear Conversations </button>
+                    <button className="btn-bx"> Light mode </button>
+                    <button className="btn-bx"> My Account </button>
+                    <button className="btn-bx"> Updates & FAQ </button>
+                    <button className="btn-bx"> Log out </button>
 
                 </div>
 
@@ -88,7 +88,7 @@ function Chat() {
 
                 </div>
 
-                <div className="input-text">
+                <div className="input-text-m">
                     <input className="input" type="text" placeholder="Type message" />
 
                     <img className="aviao" src={aviao} alt="Enviar" />
