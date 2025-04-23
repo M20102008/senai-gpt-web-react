@@ -1,11 +1,10 @@
-
-.container {
+.container-2 {
 
     display: flex;
-    
+
 }
 
-.left-painel {
+.left-painel-2 {
 
     height: 100vh;
     width: 20vw;
@@ -14,32 +13,32 @@
 
 }
 
-.painel-central {
+.painel-central-2 {
 
     height: 100%;
     width: 80vw;
-    background-color:white;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
 
 }
 
-.top {
- width: 100%;
- height: 50%;
- background-color: white;
+.top-2 {
+    width: 100%;
+    height: 50%;
+    background-color: white;
 
 
 }
 
-.bottom {
+.bottom-2 {
 
     width: 100%;
     height: 50%;
 }
 
-.btn-new-chat {
+.btn-new-chat-2 {
     background-color: black;
     color: white;
     width: 100%;
@@ -62,27 +61,27 @@
     border: none;
 }
 
-.btn-chat{
-width: 100vh;
-background-color: transparent;
-padding: 10px;
-color: black;
-border: none;
-border-radius: 12px;
-margin-bottom: 10px;
-text-align: center;
-display: flex;
-flex-direction: row;
-align-items: center;
+.btn-chat-2 {
+    width: 100vh;
+    background-color: transparent;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
 }
 
-.btn-chat img{
+.btn-chat img {
 
     margin-right: 15px;
 }
 
-.div-principal-text {
+.div-principal-text-2 {
     flex-direction: row;
     display: flex;
 }
@@ -90,30 +89,26 @@ align-items: center;
 .input {
     border-radius: 10px;
     padding: 18px;
-    /* Espacemento interno */
     border: none;
-    /* Remove a Borda */
     background-color: #F7F9FB;
-    /* Define a cor de fundo */
     width: 32vw;
     margin-bottom: 16px;
-    margin-top: 8vw;
-    height: 9px;
+    margin-top: 110px;
+    height: 1px;
     padding-right: 30px;
     padding-left: 70px;
-    
+    align-items: center;
+}
+
+.logo-2 {
+
+    margin-top: 8vw;
 
 }
 
-.logo{
-
-margin-top: 8vw;
-
-}
 
 
-
-.input-text-m {
+.input-text {
 
     position: relative;
     display: flex;
@@ -123,57 +118,61 @@ margin-top: 8vw;
 .aviao {
     position: absolute;
     right: 10px;
-    top: 8vw;
+    top: 73%;
     width: 20px;
     height: 20px;
 }
 
-.microfone { 
-position: absolute;
-left: 10px;
-top: 8vw;
-width: 20px;
-height: 20px;
+.microfone {
+    position: absolute;
+    left: 10px;
+    top: 73%;
+    width: 20px;
+    height: 20px;
 }
 
-.botaoimagem { 
+.botaoimagem {
     position: absolute;
     left: 40px;
-    top: 8vw;
+    top: 73%;
     width: 20px;
     height: 20px;
 }
 
-.painel-central .dicas-container{
-    display: flex;
-    max-width: 50vw;
-    margin-top: 20px;
-    font-family: inter;
-}
-.painel-central .dicas-item{
+p {
+    font-size: 16px;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    font-family: inter;
-    margin-top: 5vw;
-
 }
- .painel-central  .dicas-item h2 {
-    margin-top: 20px;
-   font-family: inter;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 
-}
-.painel-central  .dicas-item p {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f7f9fb;
-    border-radius: 8px;
-    font-family: inter;
+.exemples h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
+
+.capacibilities h3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.limitations h3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dicas-container{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 16px;
+}
