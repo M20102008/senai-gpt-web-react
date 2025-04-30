@@ -1,179 +1,215 @@
-.container-2 {
-
-    display: flex;
-
-}
-
-.left-painel-2 {
+.left-panel {
 
     height: 100vh;
     width: 20vw;
-    background-color: white;
-    border: 2%;
+    border-right: 1px solid #ccc;
 
 }
 
-.painel-central-2 {
+.central-panel {
 
-    height: 100%;
+    height: 100vh;
     width: 80vw;
-    background-color: white;
+
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
 }
 
-.top-2 {
+.central-panel .chat-logo {
+    
+    margin-top: 25vh;
+
+}
+
+.central-panel .dicas-container {
+
+    display: flex;
+    max-width: 50vw;
+    margin-top: 20px;
+
+}
+
+.central-panel .dicas-item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.central-panel .dicas-item h2 {
+
+    margin-bottom: 20px;
+
+    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em colunas */
+    align-items: center; /* Cetraliza horizontalmente */
+
+}
+
+.central-panel .dicas-item p {
+
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F7F9FB;
+    border-radius: 8px;
+
+}
+
+.container {
+
+    display: flex;
+
+}
+
+.top {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 70vh;
+    overflow: auto;
+
+}
+
+.top .btn-new-chat {
+
     width: 100%;
-    height: 50%;
-    background-color: white;
-
-
-}
-
-.bottom-2 {
-
-    width: 100%;
-    height: 50%;
-}
-
-.btn-new-chat-2 {
     background-color: black;
+    padding: 10px;
     color: white;
-    width: 100%;
-    height: 50px;
-    border-radius: 12px;
-    padding: 12px;
-    margin-top: 10px;
-    font-size: 15px;
-
-}
-
-.btn-bx {
-
-    background-color: white;
-    color: black;
-    width: 100%;
-    height: 50px;
-    padding: 28px;
-    border-radius: 12px;
     border: none;
+    border-radius: 12px;
+    margin-bottom: 10px;
+
 }
 
-.btn-chat-2 {
-    width: 100vh;
+.btn-chat {
+
+    width: 100%;
     background-color: transparent;
     padding: 10px;
     color: black;
     border: none;
     border-radius: 12px;
     margin-bottom: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: left;
+
+    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
+    flex-direction: row; /* Organiza os elementos em linhas */
+    align-items: center; /* Centraliza verticalmente */
 
 }
 
 .btn-chat img {
 
     margin-right: 15px;
+
 }
 
-.div-principal-text-2 {
-    flex-direction: row;
+.bottom {
+
+    border-top: 1px solid #ccc;
+    padding: 20px;
+
+}
+
+.input-container-1 {
+
+    margin-top: auto;
+    margin-bottom: 40px;
+
     display: flex;
-}
+    align-items: center;
 
-.input {
-    border-radius: 10px;
-    padding: 18px;
     border: none;
     background-color: #F7F9FB;
-    width: 32vw;
-    margin-bottom: 16px;
-    margin-top: 110px;
-    height: 1px;
-    padding-right: 30px;
-    padding-left: 70px;
-    align-items: center;
-}
 
-.logo-2 {
+    border-radius: 16px;
 
-    margin-top: 8vw;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
+.input-container-1 input {
 
-
-.input-text {
-
-    position: relative;
-    display: flex;
-    margin-top: 18%;
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+    width: 40vw;
 
 }
 
-.aviao {
-    position: absolute;
-    right: 10px;
-    top: 73%;
-    width: 20px;
-    height: 20px;
+.input-container-2 {
+
+    margin-top: auto;
+    margin-bottom: 40px;
+
 }
 
-.microfone {
-    position: absolute;
-    left: 10px;
-    top: 73%;
-    width: 20px;
-    height: 20px;
+.input-container-2 input {
+
+    padding: 20px;
+    border: none;
+    background-color: #F7F9FB;
+    border-radius: 16px;
+    width: 40vw;
+
 }
 
-.botaoimagem {
-    position: absolute;
-    left: 40px;
-    top: 73%;
-    width: 20px;
-    height: 20px;
-}
-
-p {
-    font-size: 16px;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.exemples h3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.capacibilities h3 {
+.chat-container {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 80vw;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+    /* Para corrigir o bug que acontece quando há muitas mensagens no chat */
+    height: 90vh;
+    overflow: auto;
 
 }
 
-.limitations h3 {
+.chat-header {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
 
 }
 
-.dicas-container{
+.chat-messages {
 
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    gap: 16px;
+    width: 100%;
+
+}
+
+.chat-container .message-item {
+
+    background-color: #ccc;
+    border-radius: 12px 12px 0 12px;
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+
+}
+
+.chat-container .message-item.chatbot {
+
+    background-color: #ccc;
+    border-radius: 12px 12px 12px 0px;
+    padding: 20px;
+    width: 300px;
+    margin-left: unset;
+    color: white;
+    background: #000;
+
 }

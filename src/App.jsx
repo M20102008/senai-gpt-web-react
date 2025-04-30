@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/login";
 import Chat from "./pages/chat";
@@ -10,12 +9,17 @@ function App() {
     let token = localStorage.getItem("meuToken");
 
     if (token == null) {
+
       return false;
+
     } else {
 
       return true;
-    };
+
+    }
+
   }
+
   return (
     <>
       <BrowserRouter>
@@ -32,7 +36,6 @@ function App() {
       </BrowserRouter>
     </>
   )
-
 }
 
 export default App;
