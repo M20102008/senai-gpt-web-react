@@ -1,0 +1,90 @@
+/* .titulo {
+
+    font-size: 76px;
+
+} */
+
+/* #meutitulo {
+
+    font-size: 76px;
+
+} */
+
+.page-container {
+
+    display: flex;
+
+}
+
+h1 {
+
+    font-size: 76px;
+    font-family: "Inter";
+    font-weight: normal;
+    margin-bottom: 16px;
+
+}
+
+.new-user-container {
+
+    display: flex;
+    flex-direction: column;
+    /*deixa em colunas*/
+    align-items: center;
+    /*horizontal*/
+    justify-content: center;
+    /*horizontal*/
+    height: 100vh;
+    width: 50vw;
+
+}
+
+.new-user-logo {
+
+    height: 60px;
+
+}
+
+.up-image {
+
+    background-image: url(/src/assets/imgs/robo.png);
+    background-size: cover;
+
+    width: 50vw;
+    height: 100vh;
+
+}
+
+@media screen and (max-width: 1366px) {
+
+    .new-user-container {
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+    .new-user-container {
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .up-image {
+        display: none;
+    }
+
+    .new-user-container {
+        width: 100vw;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+}

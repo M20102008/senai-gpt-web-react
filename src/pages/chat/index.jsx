@@ -18,6 +18,8 @@ function Chat() {
 
     const [userMessage, setUserMessage] = useState("");
 
+    const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(false);
+
     useEffect(() => {
 
         // Executada toda vez que a tela abre.
@@ -28,7 +30,7 @@ function Chat() {
 
     const getChats = async () => {
         // Arrow Function
-        let response = await fetch("https://senai-gpt-api.azurewebsites.net/chats", {
+        let response = await fetch("https://senai-gpt-api.up.railway.app/chats", {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("meuToken")
             }
@@ -66,11 +68,13 @@ function Chat() {
     const clickChat = (chat) => {
 
         setChatSelecionado(chat);
-        console.log(chat);
+        setIsLeftPanelOpen (false);
 
     }
 
     const chatGPT = async (message) => {
+
+        return ["Mensagem fixa"];
 
         // Configurações do endpoint e chave da API
         const endpoint = "https://ai-testenpl826117277026.openai.azure.com/";
@@ -161,7 +165,7 @@ function Chat() {
         setChatSelecionado(novoChatObj);
         setUserMessage("");
 
-        let response = await fetch("https://senai-gpt-api.azurewebsites.net/chats", {
+        let response = await fetch("https://senai-gpt-api.up.railway.app/chats", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -183,8 +187,14 @@ function Chat() {
     return (
         <>
             <div className="container">
+                <button
+                    className="btn-toggle-panel"
+                    onClick={() => setIsLeftPanelOpen (!isLeftPanelOpen)}
+                >
+                    ☰
+                </button>
 
-                <header className="left-panel">
+                <header className={`left-panel ${isLeftPanelOpen ? "open" : ""}`}>
 
                     <div className="top">
 

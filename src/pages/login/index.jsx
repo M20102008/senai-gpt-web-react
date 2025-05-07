@@ -10,7 +10,7 @@ function Login() {
 
   const onLoginClick = async () => {
 
-    let response = await fetch("https://senai-gpt-api.azurewebsites.net/login", {
+    let response = await fetch("https://senai-gpt-api.up.railway.app/login", {
 
       headers: {
         "Content-Type": "application/json"
@@ -27,7 +27,7 @@ function Login() {
 
     if (response.ok == true) {
 
-      let json = await response.json ();
+      let json = await response.json();
       localStorage.setItem("meuToken", json.accessToken);
     }
     window.location.href = "/chat"
@@ -59,6 +59,7 @@ function Login() {
           />
 
           <button className="btn" onClick={() => onLoginClick()}>Entrar</button>
+          <a className="form-hint" href="/new-user">Clique aqui para fazer o cadastrado</a>
         </div>
       </main>
 

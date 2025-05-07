@@ -19,7 +19,7 @@
 }
 
 .central-panel .chat-logo {
-    
+
     margin-top: 25vh;
 
 }
@@ -45,9 +45,12 @@
 
     margin-bottom: 20px;
 
-    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
-    flex-direction: column; /* Organiza os elementos em colunas */
-    align-items: center; /* Cetraliza horizontalmente */
+    display: flex;
+    /* Usa o modelo Flexbox para organizar os elementos */
+    flex-direction: column;
+    /* Organiza os elementos em colunas */
+    align-items: center;
+    /* Cetraliza horizontalmente */
 
 }
 
@@ -100,9 +103,12 @@
     margin-bottom: 10px;
     text-align: left;
 
-    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
-    flex-direction: row; /* Organiza os elementos em linhas */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    /* Usa o modelo Flexbox para organizar os elementos */
+    flex-direction: row;
+    /* Organiza os elementos em linhas */
+    align-items: center;
+    /* Centraliza verticalmente */
 
 }
 
@@ -173,7 +179,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    
+
     /* Para corrigir o bug que acontece quando há muitas mensagens no chat */
     height: 90vh;
     overflow: auto;
@@ -212,4 +218,95 @@
     color: white;
     background: #000;
 
+}
+
+ .btn-toggle-panel{
+
+    display: none;
+} 
+
+@media screen and (max-width: 768px) {
+
+    .left-panel {
+
+        display: none;
+
+    }
+
+    .central-panel {
+
+        width: 100vw;
+    }
+
+    .btn-toggle-panel {
+        display: block;
+
+        z-index: 2;
+
+        width: 40px;
+        height: 40px;
+
+        border-radius: 100px;
+
+        position: absolute;
+        top: 39px;
+        left: 20px;
+
+        font-size: 25px;
+
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .left-panel.open {
+
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+    }
+
+    .chat-logo img {
+
+        width: 75vw;
+
+    }
+
+
+    .central-panel .dicas-container {
+
+        display: flex;
+        max-width: 78vw;
+        margin-top: 20px;
+    
+    }
+
+     .input-container-1 {
+
+        margin-top: auto;
+        margin-bottom: 30px;
+    
+        display: flex;
+        align-items: center;
+    
+        border: none;
+        background-color: #F7F9FB;
+    
+        border-radius: 16px;
+    
+        padding-left: 15px;
+        padding-right: 15px;
+    
+    } 
+
+    .input-container-1 input {
+
+        border: none;
+        padding: 20px;
+        background-color: transparent;
+        width: 60vw;
+    
+    }
 }
