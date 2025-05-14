@@ -1,8 +1,11 @@
 import "./chat.css"
 import btn from "../../assets/imgs/IconSet (1).svg";
+import bntwhite from "../../assets/imgs/btnwhite.svg";
+
 //import btnc from "../../assets/imgs/IconSet (1).svg";
 //import btnchat from "../../assets/imgs/IconSet (1).svg";
 import logo from "../../assets/imgs/Chat.png";
+import logowhite from "../../assets/imgs/Chatwhite.svg";
 import exemplos from "../../assets/imgs/IconSet (3).svg";
 import exempless from "../../assets/imgs/Star.svg";
 import exemples from "../../assets/imgs/ShieldWarning (1).svg";
@@ -19,6 +22,8 @@ function Chat() {
     const [userMessage, setUserMessage] = useState("");
 
     const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(false);
+
+    const [darkmode, setdarkmode] = useState(false);
 
     useEffect(() => {
 
@@ -68,7 +73,7 @@ function Chat() {
     const clickChat = (chat) => {
 
         setChatSelecionado(chat);
-        setIsLeftPanelOpen (false);
+        setIsLeftPanelOpen(false);
 
     }
 
@@ -182,6 +187,23 @@ function Chat() {
         }
     }
 
+    const toggledarkmode = () => {
+
+        setdarkmode(!darkmode);
+
+        if (darkmode == true) {
+
+            document.body.classList.remove("dark-mode")
+
+        }else{
+
+            document.body.classList.add("dark-mode")
+        }
+
+        localStorage.setItem("dark-mode", !darkmode);
+    
+    }
+
 
 
     return (
@@ -189,7 +211,7 @@ function Chat() {
             <div className="container">
                 <button
                     className="btn-toggle-panel"
-                    onClick={() => setIsLeftPanelOpen (!isLeftPanelOpen)}
+                    onClick={() => setIsLeftPanelOpen(!isLeftPanelOpen)}
                 >
                     ☰
                 </button>
@@ -202,7 +224,7 @@ function Chat() {
 
                         {chats.map(chat => (
                             <button className="btn-chat" onClick={() => clickChat(chat)}>
-                                <img src={btn} alt="ícone de chat." />
+                                <img src={darkmode == true? bntwhite : btn} alt="ícone de chat." />
                                 {chat.chatTitle}
                             </button>
                         ))}
@@ -211,10 +233,10 @@ function Chat() {
 
                     <div className="bottom">
 
-                        <button className="btn-chat">Clear conversations</button>
-                        <button className="btn-chat">Light mode</button>
-                        <button className="btn-chat">My account</button>
-                        <button className="btn-chat">Updates & FAQ</button>
+                        {/* <button className="btn-chat">Clear conversations</button> */}
+                        <button className="btn-chat" onClick={() => toggledarkmode()}>Light mode</button>
+                        {/* <button className="btn-chat">My account</button> */}
+                        {/* <button className="btn-chat">Updates & FAQ</button> */}
                         <button className="btn-chat" onClick={() => onLogOutClick()}>Log out</button>
 
                     </div>
@@ -228,7 +250,7 @@ function Chat() {
                         <>
 
                             <div className="chat-logo">
-                                <img src={logo} alt="Logo do SenaiGPT." />
+                                <img src={darkmode == true? logowhite : logo} alt="Logo do SenaiGPT." />
                             </div>
 
                             <div className="dicas-container">

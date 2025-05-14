@@ -102,6 +102,7 @@
     border-radius: 12px;
     margin-bottom: 10px;
     text-align: left;
+    cursor: pointer;
 
     display: flex;
     /* Usa o modelo Flexbox para organizar os elementos */
@@ -309,4 +310,30 @@
         width: 60vw;
     
     }
+}
+
+body.dark-mode .left-panel{
+
+background-color: black !important;
+
+}
+body.dark-mode .btn-chat{
+
+    color: white;
+
+}
+body.dark-mode .btn-new-chat{
+
+    border: white;
+    cursor: pointer;
+    background-color:white;
+    color:black;
+}
+body.dark-mode .central-panel{
+
+    background-color: black;
+}
+body.input-container-1 input {
+
+   color: black;
 }
